@@ -40,7 +40,7 @@ public class Craps {
     // If he rolls a 7 or 11, that’s a Natural and he wins.
     if(value == 2 || value == 3 || value == 12){ //craps!
       System.out.println("Rolled " + value + "! Crap.");
-      return false; //loose
+      return false; //lose
     } else if(value == 7 || value == 11){ //natural!
       System.out.println("Rolled " + value + "! A natural.");
       return true; //thats a win
@@ -86,7 +86,7 @@ public class Craps {
         System.out.println("\nYou win!");
         shooter++;
       } else {
-        System.out.println("\nYou loose!");
+        System.out.println("\nYou lose!");
         house++;
       }
 
